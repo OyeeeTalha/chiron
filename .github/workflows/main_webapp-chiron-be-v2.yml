@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'webapp-chiron'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.__publishingprofilesecretname__ }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./backend # 👈 Tells Azure to deploy from the backend subfolder, not the workspace root
